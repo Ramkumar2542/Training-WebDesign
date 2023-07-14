@@ -1,3 +1,16 @@
-* {
-    background-color: lightcoral;
-}
+// Abstract
+@import './abstract/variable';
+
+// Base
+@import './base/reset';
+@import './base/global';
+
+// Utilities
+@import './utilities/animation';
+
+// Components
+@import './components/button';
+
+
+// Layouts
+@import './layouts/header';
