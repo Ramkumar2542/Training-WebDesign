@@ -88,6 +88,13 @@ a {
     font-size: 0.6rem;
   }
 }
+@media only screen and (min-width: 576px) {
+  .btn {
+    padding: 0.5rem 1rem;
+    line-height: 1.8;
+    font-size: 0.7rem;
+  }
+}
 .btn-primary {
   background-color: #3f43fd;
   color: #fff;
@@ -114,7 +121,11 @@ a {
 }
 @media only screen and (max-width: 576px) {
   .header {
-    background-color: aqua;
+    padding: 1rem 2rem;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .header {
     padding: 1rem 2rem;
   }
 }
@@ -125,6 +136,11 @@ a {
   text-transform: uppercase;
 }
 @media only screen and (max-width: 576px) {
+  .header--menu {
+    display: none;
+  }
+}
+@media only screen and (min-width: 576px) {
   .header--menu {
     display: none;
   }
@@ -151,6 +167,11 @@ a {
   text-align: center;
 }
 @media only screen and (max-width: 576px) {
+  .footer {
+    padding: 2rem 2rem;
+  }
+}
+@media only screen and (min-width: 576px) {
   .footer {
     padding: 2rem 2rem;
   }
@@ -195,6 +216,12 @@ a {
     padding-left: 0.8rem;
   }
 }
+@media only screen and (min-width: 576px) {
+  .footer ul li {
+    font-size: 0.8rem;
+    padding-left: 1rem;
+  }
+}
 
 .home {
   padding: 8rem 20rem;
@@ -208,10 +235,21 @@ a {
     padding: 2rem 2rem;
   }
 }
+@media only screen and (min-width: 576px) {
+  .home {
+    flex-direction: column;
+    padding: 2rem 2rem;
+  }
+}
 .home--content {
   max-width: 40rem;
 }
 @media only screen and (max-width: 576px) {
+  .home--content--webimg {
+    padding-top: 2rem;
+  }
+}
+@media only screen and (min-width: 576px) {
   .home--content--webimg {
     padding-top: 2rem;
   }
@@ -224,6 +262,11 @@ a {
     font-size: 1rem;
   }
 }
+@media only screen and (min-width: 576px) {
+  .home--content--title {
+    font-size: 1.5rem;
+  }
+}
 .home--content--text {
   padding-top: 1.5rem;
   font-size: 1.2rem;
@@ -234,12 +277,22 @@ a {
     font-size: 0.8rem;
   }
 }
+@media only screen and (min-width: 576px) {
+  .home--content--text {
+    font-size: 1rem;
+  }
+}
 .home--content--btn {
   padding-top: 1.5rem;
   display: flex;
   justify-content: flex-start;
 }
 @media only screen and (max-width: 576px) {
+  .home--content--btn {
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 576px) {
   .home--content--btn {
     justify-content: center;
   }
@@ -256,6 +309,12 @@ a {
   background-color: #3f43fd;
 }
 @media only screen and (max-width: 576px) {
+  .about {
+    padding: 2rem 2rem;
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 576px) {
   .about {
     padding: 2rem 2rem;
     flex-direction: column;
@@ -279,6 +338,13 @@ a {
     padding-top: 1rem;
   }
 }
+@media only screen and (min-width: 576px) {
+  .about--content--title {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 1rem;
+  }
+}
 .about--content--text {
   padding-top: 1.5rem;
   font-size: 1rem;
@@ -292,12 +358,23 @@ a {
     padding-top: 0.4rem;
   }
 }
+@media only screen and (min-width: 576px) {
+  .about--content--text {
+    font-size: 1rem;
+    padding-top: 0.4rem;
+  }
+}
 
 .roadmap {
   padding: 8rem 20rem;
   text-align: center;
 }
 @media only screen and (max-width: 576px) {
+  .roadmap {
+    padding: 2rem 2rem;
+  }
+}
+@media only screen and (min-width: 576px) {
   .roadmap {
     padding: 2rem 2rem;
   }
@@ -312,6 +389,12 @@ a {
   justify-content: space-between;
 }
 @media only screen and (max-width: 576px) {
+  .roadmap--content {
+    padding-top: 1rem;
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 576px) {
   .roadmap--content {
     padding-top: 1rem;
     flex-direction: column;
@@ -332,6 +415,11 @@ a {
     padding-top: 1rem;
   }
 }
+@media only screen and (min-width: 576px) {
+  .roadmap--content--block {
+    padding-top: 1.5rem;
+  }
+}
 .roadmap--content--block--text {
   padding-top: 1rem;
 }
@@ -341,6 +429,11 @@ a {
   background-color: #3f43fd;
 }
 @media only screen and (max-width: 576px) {
+  .courses {
+    padding: 2rem 2rem;
+  }
+}
+@media only screen and (min-width: 576px) {
   .courses {
     padding: 2rem 2rem;
   }
@@ -366,6 +459,13 @@ a {
     flex-direction: column;
   }
 }
+@media only screen and (min-width: 576px) {
+  .courses--content {
+    padding-top: 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .courses--content--card {
   width: 25%;
   border-radius: 1rem;
@@ -374,6 +474,12 @@ a {
 @media only screen and (max-width: 576px) {
   .courses--content--card {
     width: 100%;
+    margin-top: 2rem;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .courses--content--card {
+    width: 50%;
     margin-top: 2rem;
   }
 }
@@ -407,6 +513,11 @@ a {
     padding: 2rem 2rem;
   }
 }
+@media only screen and (min-width: 576px) {
+  .contact {
+    padding: 2rem 2rem;
+  }
+}
 .contact--content {
   padding: 2rem 1.5rem;
   background-color: #fff;
@@ -419,6 +530,11 @@ a {
     flex-direction: column;
   }
 }
+@media only screen and (min-width: 576px) {
+  .contact--content {
+    flex-direction: column;
+  }
+}
 .contact--content--form {
   display: flex;
   flex-direction: column;
@@ -426,6 +542,11 @@ a {
   width: 50%;
 }
 @media only screen and (max-width: 576px) {
+  .contact--content--form {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 576px) {
   .contact--content--form {
     width: 100%;
   }
@@ -455,11 +576,6 @@ a {
 }
 .contact--content--form .send {
   margin-top: 2rem;
-}
-@media only screen and (max-width: 576px) {
-  .contact--content--form .send {
-    margin: 0 auto;
-  }
 }
 .contact--content--form input:focus, .contact--content--form textarea:focus {
   border: none;

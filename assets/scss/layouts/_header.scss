@@ -7,11 +7,16 @@
   padding: 1rem 20rem;
   border-bottom: 1px solid #eee;
   @include mixins.responsive(xs) {
-    background-color: aqua;
+    padding: 1rem 2rem;
+  }
+  @include mixins.responsive(sm) {
     padding: 1rem 2rem;
   }
   &--menu {
     @include mixins.responsive(xs) {
+      display: none;
+    }
+    @include mixins.responsive(sm) {
       display: none;
     }
     display: flex;

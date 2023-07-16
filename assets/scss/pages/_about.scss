@@ -1,5 +1,5 @@
 @use "../abstract/variable" as var;
-@use '../abstract/mixins' as mixins;
+@use "../abstract/mixins" as mixins;
 .about {
   padding: 8rem 20rem;
   display: flex;
@@ -7,6 +7,10 @@
   align-items: center;
   background-color: map-get(var.$theme-colors, "primary");
   @include mixins.responsive(xs) {
+    padding: 2rem 2rem;
+    flex-direction: column;
+  }
+  @include mixins.responsive(sm) {
     padding: 2rem 2rem;
     flex-direction: column;
   }
@@ -21,11 +25,16 @@
     &--title {
       font-size: 2rem;
       color: #fff;
-      @include mixins.responsive(xs){
+      @include mixins.responsive(xs) {
         font-size: 1rem;
         text-align: center;
         padding-top: 1rem;
-    }
+      }
+      @include mixins.responsive(sm) {
+        font-size: 1.5rem;
+        text-align: center;
+        padding-top: 1rem;
+      }
     }
     &--text {
       padding-top: 1.5rem;
@@ -33,10 +42,14 @@
       line-height: 1.8;
       color: #b4b2b2;
       text-align: justify;
-      @include mixins.responsive(xs){
+      @include mixins.responsive(xs) {
         font-size: 0.8rem;
         padding-top: 0.4rem;
-    }
+      }
+      @include mixins.responsive(sm) {
+        font-size: 1rem;
+        padding-top: 0.4rem;
+      }
     }
   }
 }

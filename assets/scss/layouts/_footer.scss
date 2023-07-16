@@ -7,6 +7,9 @@
   @include mixins.responsive(xs){
     padding: 2rem 2rem;
   }
+  @include mixins.responsive(sm){
+    padding: 2rem 2rem;
+  }
  
   h2,
   p
@@ -42,6 +45,10 @@
       @include mixins.responsive(xs){
         font-size: 0.5rem;
         padding-left:0.8rem;
+      }
+      @include mixins.responsive(sm){
+        font-size: 0.8rem;
+        padding-left:1rem;
       }
     }
   }
