@@ -1,5 +1,6 @@
 // Abstract
 @import './abstract/variable';
+@import './abstract/mixins';
 
 // Base
 @import './base/reset';
@@ -7,6 +8,7 @@
 
 // Utilities
 @import './utilities/animation';
+@import './utilities/spacing';
 
 // Components
 @import './components/button';
@@ -14,3 +16,11 @@
 
 // Layouts
 @import './layouts/header';
+@import './layouts/footer';
+
+// Pages
+@import './pages/home';
+@import './pages/about';
+@import './pages/roadmap';
+@import './pages/courses';
+@import './pages/contact';

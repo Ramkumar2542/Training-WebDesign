@@ -1,0 +1,38 @@
+@mixin responsive($breakboint) {
+    // X-Small devices (portrait phones, less than 576px)
+    @if $breakboint == xs {
+        @media only screen and (max-width: 576px) {
+            @content;
+        }
+    }
+    // Small devices (landscape phones, 576px and up)
+    @else if $breakboint == sm {
+        @media only screen and (min-width: 576px) {
+            @content;
+        }
+    }
+    // Medium devices (tablets, 768px and up)
+    @else if $breakboint == md {
+        @media only screen and (min-width: 768px) {
+            @content;
+        }
+    }
+    // Large devices (desktops, 992px and up)
+    @else if $breakboint == lg {
+        @media only screen and (min-width: 992px) {
+            @content;
+        }
+    }
+    // X-Large devices (large desktops, 1200px and up)
+    @else if $breakboint == xl {
+        @media only screen and (min-width:1200px) {
+            @content;
+        }
+    }
+    // XX-Large devices (larger desktops, 1400px and up)
+    @else if $breakboint == xxl {
+        @media only screen and (min-width:1400px) {
+            @content;
+        }
+    }
+}

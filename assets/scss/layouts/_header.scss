@@ -1,11 +1,19 @@
 @use "../abstract/variable" as var;
+@use '../abstract/mixins' as mixins;
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 20rem;
   border-bottom: 1px solid #eee;
+  @include mixins.responsive(xs) {
+    background-color: aqua;
+    padding: 1rem 2rem;
+  }
   &--menu {
+    @include mixins.responsive(xs) {
+      display: none;
+    }
     display: flex;
     justify-content: space-between;
     list-style: none;

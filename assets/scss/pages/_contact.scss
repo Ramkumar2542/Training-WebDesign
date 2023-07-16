@@ -1,0 +1,62 @@
+@use '../abstract/mixins' as mixins;
+.contact {
+  padding: 8rem 20rem;
+  background-color: #e0e0e0;
+  @include mixins.responsive(xs){
+    padding: 2rem 2rem;
+  }
+  &--content {
+    padding: 2rem 1.5rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    @include mixins.responsive(xs){
+      flex-direction: column;
+    }
+    &--form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 50%;
+        @include mixins.responsive(xs){
+          width: 100%;
+        }
+      p {
+        padding-top: 1rem;
+        font-size: 1rem;
+        color: #b4b2b2;
+      }
+      input[type=text]{
+        margin-top: 2rem;
+        padding: 1rem;
+        width: 100%;
+        background-color: #f7f7f7;
+        border-radius: 8px;
+        border: none;
+        outline: none;
+      }
+      textarea {
+        width: 100%;
+        margin-top: 2rem;
+        padding: 1rem;
+        background-color: #f7f7f7;
+        border-radius: 8px;
+        border: none;
+        outline: none;
+      }
+      .send {
+        margin-top: 2rem;
+        @include mixins.responsive(xs){
+          margin: 0 auto;
+        }
+      }
+      input:focus, textarea:focus {
+        border: none;
+        outline: none !important;
+        border:1px solid blue;
+        box-shadow: 0 0 10px #719ECE;
+      }
+    }
+  }
+}

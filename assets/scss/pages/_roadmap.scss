@@ -1,0 +1,39 @@
+@use '../abstract/mixins' as mixins;
+.roadmap {
+    padding: 8rem 20rem;
+    text-align: center;
+    @include mixins.responsive(xs) {
+        padding: 2rem 2rem;
+    }
+    &--head {
+        &--text {
+            padding-top: 1rem;
+            color: #b4b2b2;
+        }
+    }
+    &--content {
+        padding-top: 5rem;
+        display: flex;
+        justify-content: space-between;
+        @include mixins.responsive(xs) {
+            padding-top: 1rem;
+            flex-direction: column;
+        }
+        img {
+            width: 160px;
+            height: auto;
+        }
+        &--block {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            @include mixins.responsive(xs) {
+                padding-top: 1rem;
+            }
+            &--text {
+                padding-top: 1rem;
+            }
+        }
+    }
+}

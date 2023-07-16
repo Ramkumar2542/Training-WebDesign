@@ -1,0 +1,42 @@
+@use "../abstract/variable" as var;
+@use '../abstract/mixins' as mixins;
+.about {
+  padding: 8rem 20rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: map-get(var.$theme-colors, "primary");
+  @include mixins.responsive(xs) {
+    padding: 2rem 2rem;
+    flex-direction: column;
+  }
+  &--img {
+    img {
+      width: 32rem;
+      height: auto;
+    }
+  }
+  &--content {
+    max-width: 45rem;
+    &--title {
+      font-size: 2rem;
+      color: #fff;
+      @include mixins.responsive(xs){
+        font-size: 1rem;
+        text-align: center;
+        padding-top: 1rem;
+    }
+    }
+    &--text {
+      padding-top: 1.5rem;
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #b4b2b2;
+      text-align: justify;
+      @include mixins.responsive(xs){
+        font-size: 0.8rem;
+        padding-top: 0.4rem;
+    }
+    }
+  }
+}

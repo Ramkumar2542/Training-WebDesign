@@ -1,4 +1,5 @@
 @use '../abstract/variable' as var;
+@use '../abstract/mixins' as mixins;
 .btn {
     padding: 0.8rem 1.6rem;
     border-radius: 6px;
@@ -7,12 +8,26 @@
     font-weight: 600;
     border: none;
     outline: none;
+    text-transform: uppercase;
+    @include mixins.responsive(xs){
+        padding: 0.3rem 1rem;
+        line-height: 1.8;
+        font-size: 0.6rem;
+    }
     &-primary{
         background-color: map-get(var.$theme-colors,"primary");
         color: #fff;
         transition: 500ms;
         &:hover {
             background-color: map-get(var.$theme-colors,"primary-hover");
+        }
+    }
+    &-outline{
+        color: map-get(var.$theme-colors,"primary");
+        transition: 500ms;
+        &:hover {
+            background-color: map-get(var.$theme-colors,"primary-hover");
+            color: #fff;
         }
     }
 
